@@ -1,7 +1,6 @@
 import React from 'react';
 //Styling and animations
 import styled from 'styled-components';
-import {motion} from 'framer-motion';
 //Redux
 import {useDispatch} from 'react-redux';
 import {loadCoinDetail} from '../actions/detailActions';
@@ -11,8 +10,6 @@ const Crypto = ({name, symbol, image_url, id}) => {
     //Load Detail
     const dispatch = useDispatch();
     const loadDetailHandler = () => {
-        document.getElementById("srch").classList.toggle("invisible");
-        document.getElementById("tradingview").classList.toggle("invisible");
         dispatch(loadCoinDetail(id))
     }
 
@@ -35,7 +32,7 @@ const Crypto = ({name, symbol, image_url, id}) => {
     )
 }
 
-const StyledCrypto = styled(motion.div)`
+const StyledCrypto = styled.div`
     box-shadow: 1px 5px 5px 2px #f5f5f5;
     text-align: center;
     border-radius: 1rem;

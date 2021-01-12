@@ -30,9 +30,6 @@ const CoinDetail = () => {
         
         const element = e.target;
         if(element.classList.contains('shadow')){
-            document.getElementById("srch").classList.toggle("invisible");
-            document.getElementById("tradingview").classList.toggle("invisible");
-
             history.push('/')
         }
     }
@@ -42,12 +39,13 @@ const CoinDetail = () => {
         <>{!isLoading && (
             <CardShadow className="shadow" onClick={exitDetailHandler}>
                 <div className="container">
-                    <CardDetail className="row mt-5 rounded p-3" >
+                    <CardDetail className="col mt-5 rounded p-3" >
                         <div>
                             <div className="stats">
                             <img src={detailedCoin.image.large} alt={detailedCoin.name}></img> 
 
-                                <h2>{detailedCoin.name}</h2> 
+                                <h2>{detailedCoin.name}</h2>
+                                <h4>${detailedCoin.symbol.toUpperCase()}</h4>
                                 <div className="info">
                                     <h4 className=" pb-2">Price: ${addComma(detailedCoin.market_data.current_price.usd)} (USD)</h4>
                                     <p>Market Cap: ${addCommaAndRound(detailedCoin.market_data.market_cap.usd)} (USD)</p>
@@ -66,7 +64,7 @@ const CoinDetail = () => {
                     </CardDetail>
                 </div>
             </CardShadow>
-        )}
+            )}
         </>
     )
 }
@@ -78,14 +76,21 @@ const CardShadow = styled.div`
     overflow-y: scroll;
     background: #161629;
     position: fixed;
+    z-index: 5;
     top: 0;
     left: 0;
+
 
 `;
 
 const CardDetail = styled.div`
 
     background-image: linear-gradient(to right top, #192b3b 10%, #363868 90%);
+    z-index: 10;
+    position: absolute;
+    margin: auto;
+    top: 10px; left: 15%; right: 15%;
+
 
     img {
         height: 250px;

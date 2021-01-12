@@ -8,11 +8,14 @@ import CoinDetail from '../components/CoinDetails';
 import TradingView from '../components/TradingView';
 import NavBar from '../components/NavBar';
 import Search from '../components/Search';
+import PostComment from '../components/PostComment';
+import ShowComments from '../components/ShowComments';
+
 //STYLING AND ANIMATIONS
 import styled from 'styled-components';
 import {useLocation, Link} from 'react-router-dom';
 import bag from '../images/bag.png'
-import stonks from '../images/stonks.png'
+import babyYoda from '../images/baby-yoda.png'
 
 function Home() {
   //get the current location
@@ -21,6 +24,8 @@ function Home() {
 
   const dispatch = useDispatch();
   const {trending, allCoins} = useSelector((state) => state.trendingCryptos);
+  const user = useSelector((state) => state.userReducer.currentUser)
+
 
   useEffect(() => {
     dispatch(loadTrendingCryptos());
@@ -40,7 +45,7 @@ function Home() {
             {pathId && <CoinDetail />}
             <h2 onClick={deleteSearch}>Trending Searches</h2>
             <small className="text-white pb-4">* from CoinGecko API</small>
-            <Cryptos >
+              <Cryptos >
               {trending.map((coin) => (
                 <div key={coin.item.id}>
                   <Crypto 
@@ -53,6 +58,7 @@ function Home() {
                 </div>
               ))}
             </Cryptos>
+            
         </CryptoList>
         <br></br>
         <div className="row">
@@ -75,7 +81,7 @@ function Home() {
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
-                <img src={bag} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
+                <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                 <button className="btn btn-outline-light">r/wallstreetbets Bags</button>
               </Link>
             </div>
@@ -83,31 +89,42 @@ function Home() {
           <div className="col">
             <div className="text-center">
               <Link to="/bag/chamath">
-                <img src={bag} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
+                <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                 <button className="btn btn-outline-light">Chamath Bags</button>
               </Link>
             </div>
           </div><div className="col">
             <div className="text-center">
               <Link to="/bag/10x">
-                <img src={bag} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
+                <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                 <button className="btn btn-outline-light">10X Baggers</button>
               </Link>
             </div>
           </div><div className="col">
             <div className="text-center">
               <Link to="/bag/global">
-                <img src={bag} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
+                <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                   <button className="btn btn-outline-light">Global Macro Bags</button>
               </Link>
             </div>
           </div>
         </div>
+        <br></br>
         <img 
-        src={stonks} alt="stonks" 
+        src={babyYoda} alt="stonks" 
         className="mx-auto d-block col-xs/"
-        style={{height: 190}}></img>
-        <p className="text-center" >number only go up</p>
+        style={{height: 190}}>
+        </img>
+        <br></br>
+        <p className="text-center" >This is the way</p>
+        <div className="row">
+                    <div className="col m-5 p5">
+                        {user.is_logged && <PostComment />}
+                        <div className="col center text-center"> {!user.is_logged && <h2>Login to shill</h2>} </div>
+                    </div>
+            </div>
+        <ShowComments />
+        <br></br>
         </div>
       </div>
       </>
@@ -123,10 +140,11 @@ const CryptoList = styled.div`
 
 const Cryptos = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   cursor: pointer;
+ 
 `
 
 const ChartStyled = styled.div`
