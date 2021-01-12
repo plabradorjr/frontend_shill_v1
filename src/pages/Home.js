@@ -120,7 +120,7 @@ function Home() {
         <div className="row">
                     <div className="col m-5 p5">
                         {user.is_logged && <PostComment />}
-                        <div className="col center text-center"> {!user.is_logged && <h2>Login to shill</h2>} </div>
+                        <div className="col center text-center"> {!user.is_logged && <h2>Ser, pleas login to shill</h2>} </div>
                     </div>
             </div>
         <ShowComments />
