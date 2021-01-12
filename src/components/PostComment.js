@@ -18,7 +18,7 @@ const PostComment = () => {
         if (textInput !== "") {
 
 
-            fetch('http://localhost:3030/comments', {
+            fetch('https://api.shill.lol/comments', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
