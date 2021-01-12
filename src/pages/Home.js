@@ -121,6 +121,7 @@ function Home() {
                     <div className="col m-5 p5">
                         {user.is_logged && <PostComment />}
                         <div className="col center text-center"> {!user.is_logged && <h2>Ser, pleas login to shill</h2>} </div>
+                        <div className="col center text-center"> {!user.is_logged && <p>It's like twitter, but instead of tweets, you just shill.</p>} </div>
                     </div>
             </div>
         <ShowComments />
