@@ -6,7 +6,7 @@ export const fetchComments = () => async (dispatch) => {
     // const allComments = await axios.get("http://localhost:3030/comments")
     // production site: https://api.shill.lol
 
-    const allComments = await fetch("https://api.shill.lol").then(res => res.json())
+    const allComments = await fetch("https://api.shill.lol/comments").then(res => res.json())
 
     dispatch({
         type: "FETCH_COMMENTS",

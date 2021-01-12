@@ -25,7 +25,7 @@ const NavBar = () => {
     }
 
     const handleLoginClick = (e) => {
-        window.location = 'http://localhost:3030/auth/twitter'
+        window.location = 'https://api.shill.lol/auth/twitter'
     }
 
     const handleDeleteSearch = () => {
