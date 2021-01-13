@@ -78,6 +78,7 @@ function Home() {
         </div>
         <div className="container">
         <div className="row">
+          <h2 className="text-center pb-2">⬇️ I keep track of their bags so you don't have to ⬇️</h2>
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
@@ -111,7 +112,7 @@ function Home() {
         </div>
         <br></br>
         <img 
-        src={babyYoda} alt="stonks" 
+        src={babyYoda} alt="yoda" 
         className="mx-auto d-block col-xs/"
         style={{height: 190}}>
         </img>
@@ -119,9 +120,10 @@ function Home() {
         <p className="text-center" >This is the way</p>
         <div className="row">
                     <div className="col m-5 p5">
-                        {user.is_logged && <PostComment />}
+                        
                         <div className="col center text-center"> {!user.is_logged && <h2>Ser, pleas login to shill</h2>} </div>
-                        <div className="col center text-center"> {!user.is_logged && <p>It's like twitter, but instead of tweets, you just shill.</p>} </div>
+                        <PostComment />
+                        {/* <div className="col center text-center"> {!user.is_logged && <p>It's like twitter, but instead of tweets, you just shill.</p>} </div> */}
                     </div>
             </div>
         <ShowComments />

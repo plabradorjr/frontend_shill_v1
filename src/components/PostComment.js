@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import {fetchComments} from '../actions/commentsAction';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // import axios from 'axios';
 //styles
 
 const PostComment = () => {
+    const user = useSelector((state) => state.userReducer.currentUser)
+
 
     const dispatch = useDispatch();
     const [textInput, setTextInput] = useState("");
@@ -74,7 +76,8 @@ const PostComment = () => {
                             value={textInput}
                             type="text" 
                             className="form-control" 
-                            aria-describedby="basic-addon2">
+                            aria-describedby="basic-addon2"
+                            disabled={!user.is_logged && "true"}>
                         </input>
                         <div  className="input-group-append">
                             <button className="btn btn-warning btn-block" type="submit" >Summon a Shill</button>
