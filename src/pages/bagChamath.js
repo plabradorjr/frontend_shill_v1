@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
+import chamath from '../images/chamath.jpg'
 
 
 
@@ -14,16 +15,8 @@ const bagChamath = () => {
         <>
         <NavBar />
         <div className="container">
-            <div className="row">
-                <div className="col-sm"></div>
-                <div className="col-sm">
-                <TwitterTweetEmbed 
-                    tweetId="1344848278026907649"
-                    theme="dark"
-                />  
-                </div> 
-                <div className="col-sm"></div>
-            </div>
+        <img src={chamath} alt="chamath" className="mx-auto d-block pt-2" style={{height: 100}}></img>
+        <h2 className="text-center">will he damp on you?</h2>
                      
             <div className="row">
                 <ChartStyled >
@@ -46,6 +39,18 @@ const bagChamath = () => {
                     <TradingView ticker={"NASDAQ:INAQ"} />
                 </ ChartStyled>
             </div>
+        
+            <div className="row justify-content-md-center">
+                <div className="col"></div>
+                <div className="center col-md pt-5 mt-1">
+                <TwitterTweetEmbed 
+                    tweetId="1336164587826135040"
+                    theme="dark"
+                />  
+                </div> 
+                <div className="col"></div>
+            </div>
+            
         </div>
         </>
     )

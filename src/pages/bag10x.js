@@ -12,7 +12,11 @@ const bagWallStreetBets = () => {
         <>
         <NavBar />
         <div className="container">
-            <h1 className="text-center text-white-50 pt-3">When 10x?</h1>
+        <img src="https://pbs.twimg.com/media/DKVYj5IVAAAQ2BH.jpg"
+            alt="V"
+            className="mx-auto d-block pt-2" style={{height: 200}}>
+        </img>
+            <h1 className="text-center text-white-50 pt-3">Wen?</h1>
             <div className="row">
                 <ChartStyled >
                     <h2>UNI</h2>
@@ -23,6 +27,17 @@ const bagWallStreetBets = () => {
                     <TradingView ticker={"POLONIEX:STAKEUSDT"} />
                 </ ChartStyled>
             </div>
+            <div className="row">
+                <ChartStyled >
+                    <h2>SUSHI</h2>
+                    <TradingView ticker={"BINANCE:SUSHIUSDT"} />
+                </ ChartStyled>
+                <ChartStyled >
+                    <h2>SPANK</h2>
+                    <TradingView ticker={"UNISWAP:SPANKWETH"} />
+                </ ChartStyled>
+            </div>
+
         </div>
         </>
     )
