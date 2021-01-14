@@ -4,6 +4,8 @@ import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import WallsSteetBaby from '../images/wsba.png';
+import PostComment from '../components/PostComment';
+import ShowComments from '../components/ShowComments';
 
 
 
@@ -36,6 +38,15 @@ const bagWallStreetBets = () => {
                     <TradingView ticker={"NYSE:NIO"} />
                 </ ChartStyled>
             </div>
+
+            <div className="row">
+                <div className="col m-5 p-5">
+                    
+                    <PostComment />
+                </div>
+                <ShowComments />
+            </div>
+
         </div>
         </>
     )

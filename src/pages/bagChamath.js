@@ -5,9 +5,8 @@ import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import chamath from '../images/chamath.jpg'
-
-
-
+import ShowComments from '../components/ShowComments';
+import PostComment from '../components/PostComment';
 
 const bagChamath = () => {
 
@@ -16,7 +15,13 @@ const bagChamath = () => {
         <NavBar />
         <div className="container">
         <img src={chamath} alt="chamath" className="mx-auto d-block pt-2" style={{height: 100}}></img>
-        <h2 className="text-center">will he damp on you?</h2>
+        <h2 className="text-center">Wen Champtons?</h2>
+        <div className="row justify-content-center">
+                <ChartStyled >
+                    <h2>ACTC</h2>
+                    <TradingView ticker={"NASDAQ:ACTC"} />
+                </ ChartStyled>
+            </div>
                      
             <div className="row">
                 <ChartStyled >
@@ -50,7 +55,13 @@ const bagChamath = () => {
                 </div> 
                 <div className="col"></div>
             </div>
-            
+            <div className="row">
+                <div className="col m-5 p5">
+                    
+                    <PostComment />
+                </div>
+            </div>
+            <ShowComments />
         </div>
         </>
     )

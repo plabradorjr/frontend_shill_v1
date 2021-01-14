@@ -3,6 +3,8 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
+import ShowComments from '../components/ShowComments';
+import PostComment from '../components/PostComment';
 
 
 
@@ -53,6 +55,14 @@ const bagChamath = () => {
                     <h2>Shanghai Shenzhen CSI 300 Index</h2>
                     <TradingView ticker={"SSE:CSI300-HKG"} />
                 </ ChartStyled>
+            </div>
+
+            <div className="row">
+                <div className="col m-5 p-5">
+                    
+                    <PostComment />
+                </div>
+                <ShowComments />
             </div>
 
         </div>

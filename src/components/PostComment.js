@@ -74,6 +74,7 @@ const PostComment = () => {
                         <input 
                             onChange={inputHandler}
                             value={textInput}
+                            placeholder={!user.is_logged && "login to comment"}
                             type="text" 
                             className="form-control" 
                             aria-describedby="basic-addon2"

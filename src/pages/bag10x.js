@@ -3,6 +3,8 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
+import ShowComments from '../components/ShowComments';
+import PostComment from '../components/PostComment';
 
 
 
@@ -37,7 +39,14 @@ const bagWallStreetBets = () => {
                     <TradingView ticker={"UNISWAP:SPANKWETH"} />
                 </ ChartStyled>
             </div>
-
+            <div className="row">
+                <div className="col m-5 p-5">
+                    
+                    <PostComment />
+                </div>
+                <ShowComments />
+            </div>
+           
         </div>
         </>
     )
