@@ -98,7 +98,7 @@ function Home() {
             <div className="text-center">
               <Link to="/bag/10x">
                 <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
-                <button className="btn btn-outline-light">10X Baggers</button>
+                <button className="btn btn-outline-light">Defi Bags</button>
               </Link>
             </div>
           </div><div className="col">
