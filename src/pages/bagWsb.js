@@ -16,7 +16,12 @@ const bagWallStreetBets = () => {
         <NavBar />
         <div className="container">
             <img src={WallsSteetBaby} alt="baby" className="mx-auto d-block img-thumbnail/"></img>
-                     
+            <div className="row justify-content-center">
+                <ChartStyled >
+                    <h2>BB</h2>
+                    <TradingView ticker={"NYSE:BB"} />
+                </ ChartStyled>
+            </div>
             <div className="row">
                 <ChartStyled >
                     <h2>TSLA</h2>
