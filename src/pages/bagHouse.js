@@ -14,11 +14,10 @@ const bagWallStreetBets = () => {
         <>
         <NavBar />
         <div className="container">
-        <img src="https://pbs.twimg.com/media/DKVYj5IVAAAQ2BH.jpg"
-            alt="V"
+        <img src="https://www.canadiangrocer.com/wp-content/uploads/2017/05/The-House-Always-Wins.jpg"
+            alt="house always wins"
             className="mx-auto d-block pt-2" style={{height: 200}}>
         </img>
-            <h1 className="text-center text-white-50 pt-3">Wen?</h1>
             <div className="row">
                 <ChartStyled >
                     <h2>UNI</h2>
