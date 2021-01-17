@@ -2,7 +2,7 @@ import React from 'react';
 //components and pages
 import Home from './pages/Home';
 import Comments from './pages/Comments';
-import BagChamath from './pages/BagChamath';
+import BagChamath from './pages/BagChamath.js';
 import bagWsb from './pages/bagWsb';
 import bagHouse from './pages/bagHouse';
 import bagGlobal from './pages/bagGlobal';
