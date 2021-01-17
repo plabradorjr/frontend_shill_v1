@@ -25,18 +25,18 @@ const bagWallStreetBets = () => {
                     <TradingView ticker={"COINBASE:UNIUSD"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>xDai STAKE</h2>
-                    <TradingView ticker={"POLONIEX:STAKEUSDT"} />
+                    <h2>SUSHI</h2>
+                    <TradingView ticker={"BINANCE:SUSHIUSDT"} />
                 </ ChartStyled>
             </div>
             <div className="row">
                 <ChartStyled >
-                    <h2>SUSHI</h2>
-                    <TradingView ticker={"BINANCE:SUSHIUSDT"} />
+                    <h2>BINANCE</h2>
+                    <TradingView ticker={"BINANCE:BNBUSDT"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>SPANK</h2>
-                    <TradingView ticker={"UNISWAP:SPANKWETH"} />
+                    <h2>COINBASE</h2>
+                    <TradingView ticker={"FTX:CBSEUSD"} />
                 </ ChartStyled>
             </div>
             <div className="row">
