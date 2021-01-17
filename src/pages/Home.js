@@ -78,7 +78,7 @@ function Home() {
         </div>
         <div className="container">
         <div className="row">
-          <h2 className="text-center pb-2">⬇️ I keep track of their bags so you don't have to ⬇️</h2>
+          <h2 className="text-center pb-2">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
@@ -98,7 +98,7 @@ function Home() {
             <div className="text-center">
               <Link to="/bag/house">
                 <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
-                <button className="btn btn-outline-light">House Bags</button>
+                <button className="btn btn-outline-light">DEX | CEX Bags</button>
               </Link>
             </div>
           </div><div className="col">
