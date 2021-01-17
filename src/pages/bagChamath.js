@@ -8,7 +8,7 @@ import chamath from '../images/chamath.jpg'
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
 
-class BagChamath extends Component {
+export class BagChamath extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -81,6 +81,5 @@ const ChartStyled = styled.div`
   margin-top: 50px;
 `
 
-export default BagChamath;
+// export default BagChamath;
 
-//testing
