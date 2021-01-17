@@ -2,7 +2,7 @@ import React from 'react';
 //components and pages
 import Home from './pages/Home';
 import Comments from './pages/Comments';
-import {BagChamath} from './pages/BagChamath';
+import bagChamath from './pages/bagChamath';
 import bagWsb from './pages/bagWsb';
 import bagHouse from './pages/bagHouse';
 import bagGlobal from './pages/bagGlobal';
@@ -19,7 +19,7 @@ function App() {
         <Home />
       </Route>
       <Route path="/shills" exact component={Comments}></Route>
-      <Route path="/bag/chamath" exact component={BagChamath}></Route>
+      <Route path="/bag/chamath" exact component={bagChamath}></Route>
       <Route path="/bag/wallstreetbets" exact component={bagWsb}></Route>
       <Route path="/bag/house" exact component={bagHouse}></Route>
       <Route path="/bag/global" exact component={bagGlobal}></Route>
