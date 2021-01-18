@@ -40,13 +40,14 @@ const BagExchange = () => {
                     <TradingView ticker={"FTX:CBSEUSD"} />
                 </ ChartStyled>
             </div>
+            <div className="row">
                 <ChartStyled >
                     <h2>YFI</h2>
                     <TradingView ticker={"FTX:YFIUSD"} />
                 </ ChartStyled>
+            </div>
             <div className="row">
                 <div className="col m-5 p-5">
-                    
                     <PostComment />
                 </div>
                 <ShowComments />

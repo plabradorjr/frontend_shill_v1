@@ -65,7 +65,7 @@ function Home() {
           <Search />
         </div>
       </div>
-      <div className="container pt-5" id="tradingview">
+      <div className="container pt-3" id="tradingview">
         <div className="row">
           <ChartStyled >
               <h2>Bitcoin</h2>
@@ -78,7 +78,7 @@ function Home() {
         </div>
         <div className="container">
         <div className="row">
-          <h2 className="text-center pb-2">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
+          <h2 className="text-center pb-2 m-5">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
@@ -151,9 +151,9 @@ const Cryptos = styled.div`
 `
 
 const ChartStyled = styled.div`
-  width: 660px;
+  width: 650px;
   height: 500px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
   margin-top: 50px;
 `
 
