@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect}from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
@@ -8,7 +8,9 @@ import chamath from '../images/chamath.jpg'
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
 
-const bagChamath = () => {
+const BagChamath = () => {
+
+    useEffect(() => {window.scrollTo(0, 0);})
 
     return (
         <>
@@ -75,5 +77,5 @@ const ChartStyled = styled.div`
   margin-top: 50px;
 `
 
-export default bagChamath;
+export default BagChamath;
 
