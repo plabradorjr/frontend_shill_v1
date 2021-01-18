@@ -71,7 +71,7 @@ const BagChamath = () => {
 }
 
 const ChartStyled = styled.div`
-  width: 50%;
+  width: 660px;
   height: 500px;
   margin-bottom: 20px;
   margin-top: 50px;

@@ -40,6 +40,10 @@ const BagExchange = () => {
                     <TradingView ticker={"FTX:CBSEUSD"} />
                 </ ChartStyled>
             </div>
+                <ChartStyled >
+                    <h2>YFI</h2>
+                    <TradingView ticker={"FTX:YFIUSD"} />
+                </ ChartStyled>
             <div className="row">
                 <div className="col m-5 p-5">
                     
@@ -54,7 +58,7 @@ const BagExchange = () => {
 }
 
 const ChartStyled = styled.div`
-  width: 50%;
+  width: 660px;
   height: 500px;
   margin-bottom: 20px;
   margin-top: 50px;

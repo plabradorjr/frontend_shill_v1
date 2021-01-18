@@ -79,7 +79,7 @@ const BagGlobal = () => {
 }
 
 const ChartStyled = styled.div`
-  width: 50%;
+  width: 660px;
   height: 500px;
   margin-bottom: 50px;
   margin-top: 20px;

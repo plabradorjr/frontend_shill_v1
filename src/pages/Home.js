@@ -151,7 +151,7 @@ const Cryptos = styled.div`
 `
 
 const ChartStyled = styled.div`
-  width: 50%;
+  width: 660px;
   height: 500px;
   margin-bottom: 200px;
   margin-top: 50px;
