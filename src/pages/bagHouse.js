@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
@@ -8,7 +8,9 @@ import PostComment from '../components/PostComment';
 
 
 
-const bagWallStreetBets = () => {
+const BagExchange = () => {
+
+    useEffect(() => {window.scrollTo(0, 0);})
 
     return (
         <>
@@ -58,4 +60,4 @@ const ChartStyled = styled.div`
   margin-top: 50px;
 `
 
-export default bagWallStreetBets;
+export default BagExchange;

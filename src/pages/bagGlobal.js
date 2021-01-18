@@ -1,28 +1,36 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
+import stonk from "../images/stonks.png";
 
 
 
 
-const bagChamath = () => {
+const BagGlobal = () => {
+
+    useEffect(() => {window.scrollTo(0, 0);})
 
     return (
         <>
         <NavBar />
+        <img src={stonk} alt="stonk" className="mx-auto d-block pt-2" style={{height: 180}}></img>
+        <p className="text-center pt-2">wat is da world up to?</p>
+        <p className="text-center">number only go up.</p>
+        <hr></hr>
+
         <div className="container">
                      
             <div className="row">
-            <h2 className="text-center p-3">AMERICAS 🌎</h2>
+            <h2 className="p-3 text-info">🌎 AMERICAS:</h2>
             <hr></hr>
 
                 <ChartStyled >
-                    <h2>DOW</h2>
-                    <TradingView ticker={"NYSE:DOW"} />
+                    <h2>US TECH 100 CFD</h2>
+                    <TradingView ticker={"FOREXCOM:NSXUSD"} />
                 </ ChartStyled>
                 <ChartStyled >
                     <h2>US SP 500 CFD</h2>
@@ -31,7 +39,7 @@ const bagChamath = () => {
             </div>
 
             <div className="row">
-            <h2 className="text-center pt-3">EUROPE 🌍</h2>
+            <h2 className="pt-3 text-info">🌍 EUROPE:</h2>
             <hr></hr>
 
                 <ChartStyled >
@@ -45,7 +53,7 @@ const bagChamath = () => {
             </div>
 
             <div className="row">
-            <h2 className="text-center pt-3">ASIA PACIFIC 🌏</h2>
+            <h2 className="pt-3 text-info">🌏 ASIA PACIFIC:</h2>
             <hr></hr>
                 <ChartStyled >
                     <h2>NIKKEI 225 INDEX</h2>
@@ -77,4 +85,4 @@ const ChartStyled = styled.div`
   margin-top: 20px;
 `
 
-export default bagChamath;
+export default BagGlobal;

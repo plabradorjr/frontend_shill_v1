@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
@@ -9,7 +9,9 @@ import ShowComments from '../components/ShowComments';
 
 
 
-const bagWallStreetBets = () => {
+const BagWallStreetBets = () => {
+
+    useEffect(() => {window.scrollTo(0, 0);})
 
     return (
         <>
@@ -64,4 +66,4 @@ const ChartStyled = styled.div`
   margin-top: 50px;
 `
 
-export default bagWallStreetBets;
+export default BagWallStreetBets;
