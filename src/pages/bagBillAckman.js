@@ -5,8 +5,6 @@ import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
-import sadLyfe from "../images/sad-loss.GIF";
-
 
 
 const BagBill = () => {
@@ -17,10 +15,11 @@ const BagBill = () => {
         <>
         <NavBar />
         <div className="container">
-        <img src={sadLyfe}
-            alt="sad lyfe"
+        <img src="https://pbs.twimg.com/profile_images/887722002471059457/DAEnmKwL_400x400.jpg"
+            alt="bill ackman"
             className="mx-auto d-block pt-2" style={{height: 150}}>
         </img>
+        <h4 className="text-center">wen?</h4>
             <div className="row">
                 <ChartStyled >
                     <h2>LOW</h2>
