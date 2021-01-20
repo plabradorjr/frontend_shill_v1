@@ -101,11 +101,20 @@ function Home() {
                 <button className="btn btn-outline-light">DEX | CEX Degens</button>
               </Link>
             </div>
-          </div><div className="col">
+          </div>
+          <div className="col">
             <div className="text-center">
               <Link to="/bag/global">
                 <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                   <button className="btn btn-outline-light">Global Macro Bags</button>
+              </Link>
+            </div>
+          </div>
+          <div className="col">
+            <div className="text-center">
+              <Link to="/bag/billackman">
+                <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
+                  <button className="btn btn-outline-light">Bill Ackman Bags</button>
               </Link>
             </div>
           </div>

@@ -9,6 +9,7 @@ import BagGlobal from './pages/bagGlobal';
 // styles
 import GlobalStyles from './components/GlobalStyles';
 import {Route} from 'react-router-dom';
+import BagBill from './pages/bagBillAckman';
 
 function App() {
   
@@ -23,6 +24,8 @@ function App() {
       <Route path="/bag/wallstreetbets" exact component={bagWsb}></Route>
       <Route path="/bag/exchange" exact component={BagExchange}></Route>
       <Route path="/bag/global" exact component={BagGlobal}></Route>
+      <Route path="/bag/billackman" exact component={BagBill}></Route>
+
 
     </div>
   )
