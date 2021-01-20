@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
-import defiscam from '../images/defi-scam.gif'
+import musicGreen from '../images/music-green.GIF'
 
 
 const BagExchange = () => {
@@ -16,10 +16,11 @@ const BagExchange = () => {
         <>
         <NavBar />
         <div className="container">
-        <img src={defiscam}
+        <img src={musicGreen}
             alt="wen gf?"
-            className="mx-auto d-block pt-2" style={{width: 150}}>
+            className="mx-auto d-block pt-2" style={{height: 130}}>
         </img>
+        <h4 className="text-center">wen?</h4>
             <div className="row">
                 <ChartStyled >
                     <h2>UNI</h2>
