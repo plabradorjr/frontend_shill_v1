@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import TradingView from '../components/TradingView';
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
-
+import defiscam from '../images/defi-scam.gif'
 
 
 const BagExchange = () => {
@@ -16,9 +16,9 @@ const BagExchange = () => {
         <>
         <NavBar />
         <div className="container">
-        <img src="https://www.canadiangrocer.com/wp-content/uploads/2017/05/The-House-Always-Wins.jpg"
-            alt="house always wins"
-            className="mx-auto d-block pt-2" style={{height: 200}}>
+        <img src={defiscam}
+            alt="wen gf?"
+            className="mx-auto d-block pt-2" style={{width: 150}}>
         </img>
             <div className="row">
                 <ChartStyled >
