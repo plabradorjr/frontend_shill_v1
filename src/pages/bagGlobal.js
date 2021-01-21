@@ -18,8 +18,8 @@ const BagGlobal = () => {
         <>
         <NavBar />
         <img src={stonk} alt="stonk" className="mx-auto d-block pt-2" style={{height: 180}}></img>
-        <p className="text-center pt-2">wat is da world up to?</p>
-        <p className="text-center">number only go up.</p>
+        <p className="text-center pt-2">brrr?</p>
+        <p className="text-center">World market at a glance:</p>
         <hr></hr>
 
         <div className="container">
