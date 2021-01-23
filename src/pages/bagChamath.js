@@ -18,7 +18,12 @@ const BagChamath = () => {
         <div className="container">
         <img src={chamath} alt="chamath" className="mx-auto d-block pt-2" style={{height: 100}}></img>
         <h2 className="text-center">Wen Champtons?</h2>
-        <div className="row justify-content-center">
+        
+            <div className="row">
+                <ChartStyled >
+                    <h2>DM</h2>
+                    <TradingView ticker={"NYSE:DM"} />
+                </ ChartStyled>
                 <ChartStyled >
                     <h2>ACTC</h2>
                     <TradingView ticker={"NASDAQ:ACTC"} />
