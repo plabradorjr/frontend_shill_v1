@@ -35,7 +35,11 @@ const NavBar = () => {
     return (
         <StyledNav>
         <nav className="navbar navbar-light bgx justify-content-between pt-4 px-5">
-            <Link to="/"> <p id="logo" onClick={handleDeleteSearch}>Shill.lol - respek ✍️ da ✍️ pamp ✍️</p> </Link>
+            <div>
+                <Link to="/"> <h4 id="logo" onClick={handleDeleteSearch}>Shill.lol</h4> </Link>
+                <Link to="/"> <p id="logo" onClick={handleDeleteSearch}>respek da pamp</p> </Link> 
+            </div>
+           
             {user.is_logged && <p>Hello,  {user.name}</p>}
 
             <form className="form-inline">
