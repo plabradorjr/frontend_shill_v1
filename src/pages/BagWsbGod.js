@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
-import WallsSteetBaby from '../images/wsba.png';
 import PostComment from '../components/PostComment';
 import ShowComments from '../components/ShowComments';
 
@@ -17,7 +16,7 @@ const BagWsbGod = () => {
         <>
         <NavBar />
         <div className="container">
-            <img src={WallsSteetBaby} alt="baby" className="mx-auto d-block img-thumbnail/"></img>
+            <img src="https://pbs.twimg.com/profile_images/1225690328046264320/UQUXCdUZ_400x400.jpg" alt="baby" className="mx-auto d-block img-thumbnail/"></img>
             <div className="row justify-content-center">
                 <ChartStyled >
                     <h2>MMEDF</h2>
