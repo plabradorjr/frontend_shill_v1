@@ -16,7 +16,7 @@ const BagWsbGod = () => {
         <>
         <NavBar />
         <div className="container">
-            <img src="https://pbs.twimg.com/profile_images/1225690328046264320/UQUXCdUZ_400x400.jpg" alt="baby" className="mx-auto d-block img-thumbnail/"></img>
+            <img src="https://pbs.twimg.com/profile_images/1225690328046264320/UQUXCdUZ_400x400.jpg" alt="wsbgod" className="mx-auto d-block pt-2" style={{height: 130}}></img>
             <div className="row justify-content-center">
                 <ChartStyled >
                     <h2>MMEDF</h2>
