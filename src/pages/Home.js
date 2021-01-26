@@ -43,8 +43,8 @@ function Home() {
         <br></br>
         <CryptoList className="row">
             {pathId && <CoinDetail />}
-            <h2 onClick={deleteSearch}>Trending Searches</h2>
-            <small className="text-white pb-4">* from CoinGecko API</small>
+            <h2 className="pb-0" onClick={deleteSearch}>Trending Pumps</h2>
+            <small className="text-white pb-4 pt-0">* from CoinGecko API</small>
               <Cryptos >
               {trending.map((coin) => (
                 <div key={coin.item.id}>
@@ -78,7 +78,14 @@ function Home() {
         </div>
         <div className="container">
         <div className="row">
-          <h2 className="text-center pb-2 m-5">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
+          <div className="col justify-content-center text-center">
+            <img 
+            src={babyYoda} alt="yoda" 
+            className="mx-auto d-block col-xs mt-5"
+            style={{height: 190}}>
+            </img> 
+          </div>
+                <h2 className="text-center pb-2">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
@@ -120,13 +127,8 @@ function Home() {
           </div>
         </div>
         <br></br>
-        <img 
-        src={babyYoda} alt="yoda" 
-        className="mx-auto d-block col-xs/"
-        style={{height: 190}}>
-        </img>
+        
         <br></br>
-        <p className="text-center" >This is the way</p>
         <div className="row">
                     <div className="col m-5 p5">
                         
