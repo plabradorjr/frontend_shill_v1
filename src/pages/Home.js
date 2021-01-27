@@ -85,7 +85,10 @@ function Home() {
             style={{height: 190}}>
             </img> 
           </div>
-                <h2 className="text-center pb-2">⬇️ I keep track of some bags so you don't have to ⬇️</h2>
+          <div className="text-center pt-2">
+              <small className="text-center">this is the way</small>
+              <h2 className="text-center pb-2">🛍 choose your hunger game bags</h2>
+          </div>
           <div className="col">
             <div className="text-center">
               <Link to="/bag/wallstreetbets">
@@ -117,14 +120,14 @@ function Home() {
               </Link>
             </div>
           </div> */}
-          <div className="col">
+          {/* <div className="col">
             <div className="text-center">
               <Link to="/bag/billackman">
                 <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
                   <button className="btn btn-outline-light">Bill Ackman Bags</button>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
         <br></br>
         
