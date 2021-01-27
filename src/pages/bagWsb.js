@@ -20,14 +20,18 @@ const BagWallStreetBets = () => {
             <img src={WallsSteetBaby} alt="baby" className="mx-auto d-block img-thumbnail/"></img>
             <div className="row justify-content-center">
                 <ChartStyled >
+                    <h2>GME</h2>
+                    <TradingView ticker={"NYSE:GME"} />
+                </ ChartStyled>
+                <ChartStyled >
                     <h2>BB</h2>
                     <TradingView ticker={"NYSE:BB"} />
                 </ ChartStyled>
             </div>
             <div className="row">
                 <ChartStyled >
-                    <h2>GME</h2>
-                    <TradingView ticker={"NYSE:GME"} />
+                    <h2>AMC</h2>
+                    <TradingView ticker={"NYSE:AMC"} />
                 </ ChartStyled>
                 <ChartStyled >
                     <h2>PLTR</h2>
