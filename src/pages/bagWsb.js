@@ -34,19 +34,19 @@ const BagWallStreetBets = () => {
                     <TradingView ticker={"NYSE:AMC"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>PLTR</h2>
-                    <TradingView ticker={"NYSE:PLTR"} />
+                    <h2>NOK</h2>
+                    <TradingView ticker={"NYSE:NOK"} />
                 </ ChartStyled>
             </div>
 
             <div className="row">
                 <ChartStyled >
-                    <h2>TSLA</h2>
-                    <TradingView ticker={"NASDAQ:TSLA"} />
+                    <h2>PLTR</h2>
+                    <TradingView ticker={"NYSE:PLTR"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>NIO</h2>
-                    <TradingView ticker={"NYSE:NIO"} />
+                    <h2>TSLA</h2>
+                    <TradingView ticker={"NASDAQ:TSLA"} />
                 </ ChartStyled>
             </div>
 
