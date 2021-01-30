@@ -43,7 +43,7 @@ function Home() {
         <br></br>
         <CryptoList className="row">
             {pathId && <CoinDetail />}
-            <h2 className="pb-0" onClick={deleteSearch}>Today's Trending Pumps</h2>
+            <h2 className="pb-0" onClick={deleteSearch}>Today's Top 7 Crypto Pumps</h2>
             <small className="text-white pb-4 pt-0">* from CoinGecko API</small>
               <Cryptos >
               {trending.map((coin) => (
