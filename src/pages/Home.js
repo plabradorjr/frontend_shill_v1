@@ -43,7 +43,7 @@ function Home() {
         <br></br>
         <CryptoList className="row">
             {pathId && <CoinDetail />}
-            <h2 className="pb-0" onClick={deleteSearch}>Trending Pumps</h2>
+            <h2 className="pb-0" onClick={deleteSearch}>Today's Trending Pumps</h2>
             <small className="text-white pb-4 pt-0">* from CoinGecko API</small>
               <Cryptos >
               {trending.map((coin) => (
@@ -108,7 +108,7 @@ function Home() {
             <div className="text-center">
               <Link to="/bag/exchange">
                 <img src={bag} style={{height: 120}} alt="baby yoda" className="mx-auto img-thumbnail/"></img>
-                <button className="btn btn-outline-light">DEX | CEX Degens</button>
+                <button className="btn btn-outline-light">DEX Degens</button>
               </Link>
             </div>
           </div>
