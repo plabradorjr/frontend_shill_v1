@@ -6,6 +6,7 @@ import TradingView from '../components/TradingView';
 import WallsSteetBaby from '../images/wsba.png';
 import PostComment from '../components/PostComment';
 import ShowComments from '../components/ShowComments';
+import loss from '../images/sad-loss.GIF'
 
 
 
@@ -17,7 +18,8 @@ const BagWallStreetBets = () => {
         <>
         <NavBar />
         <div className="container">
-            <img src={WallsSteetBaby} alt="baby" className="mx-auto d-block img-thumbnail/"></img>
+            <img src={WallsSteetBaby} alt="baby" className="mx-auto d-block img-thumbnail/" style={{height: 80}}></img>
+            <img src={loss} alt="baby" className="mx-auto d-block img-thumbnail/"></img>
             <div className="row justify-content-center">
                 <ChartStyled >
                     <h2>GME</h2>

@@ -37,7 +37,7 @@ const NavBar = () => {
         <nav className="navbar navbar-light bgx justify-content-between pt-4 px-5">
             <div>
                 <Link to="/"> <h4 id="logo" onClick={handleDeleteSearch}>Shill.lol</h4> </Link>
-                <Link to="/"> <p id="logo" onClick={handleDeleteSearch}>respek da pamp</p> </Link> 
+                <Link to="/"> <p id="logo" onClick={handleDeleteSearch}>respec da pamp</p> </Link> 
             </div>
            
             {user.is_logged && <p>Hello,  {user.name}</p>}
