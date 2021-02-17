@@ -19,13 +19,6 @@ const BagChamath = () => {
         <img src={chamath} alt="chamath" className="mx-auto d-block pt-2" style={{height: 100}}></img>
         <h2 className="text-center">Wen Champtons?</h2>
 
-            <div className="row justify-content-center">
-                <ChartStyled >
-                    <h2>TSIA</h2>
-                    <TradingView ticker={"NASDAQ:TSIA"} />
-                </ ChartStyled>
-            </div>
-        
             <div className="row">
                 <ChartStyled >
                     <h2>DM</h2>
@@ -54,8 +47,8 @@ const BagChamath = () => {
                     <TradingView ticker={"NYSE:SPRQ"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>INAQ</h2>
-                    <TradingView ticker={"NASDAQ:INAQ"} />
+                    <h2>TSIA</h2>
+                    <TradingView ticker={"NASDAQ:TSIA"} />
                 </ ChartStyled>
             </div>
         

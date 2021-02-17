@@ -26,8 +26,8 @@ const BagWallStreetBets = () => {
                     <TradingView ticker={"AMEX:YOLO"} />
                 </ ChartStyled>
                 <ChartStyled >
-                    <h2>GME</h2>
-                    <TradingView ticker={"NYSE:GME"} />
+                    <h2>SNDL</h2>
+                    <TradingView ticker={"NASDAQ:SNDL"} />
                 </ ChartStyled>
             </div>
 
