@@ -3,7 +3,7 @@ import React, {useEffect}from 'react';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import TradingView from '../components/TradingView';
-import { TwitterTweetEmbed } from 'react-twitter-embed';
+// import { TwitterTweetEmbed } from 'react-twitter-embed';
 import chamath from '../images/chamath.jpg'
 import ShowComments from '../components/ShowComments';
 import PostComment from '../components/PostComment';
@@ -52,7 +52,7 @@ const BagChamath = () => {
                 </ ChartStyled>
             </div>
         
-            <div className="row justify-content-md-center">
+            {/* <div className="row justify-content-md-center">
                 <div className="col"></div>
                 <div className="center col-md pt-5 mt-1">
                 <TwitterTweetEmbed 
@@ -61,14 +61,15 @@ const BagChamath = () => {
                 />  
                 </div> 
                 <div className="col"></div>
-            </div>
+            </div> */}
             <div className="row">
-                <div className="col m-5 p5">
+                <div className="col m-5 p-5">
                     
                     <PostComment />
                 </div>
+                <ShowComments />
             </div>
-            <ShowComments />
+            
         </div>
         </>
     )
